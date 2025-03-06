@@ -1,10 +1,8 @@
 package com.neonid0.springboottraining.service;
 
 import com.neonid0.springboottraining.model.Good;
-import com.neonid0.springboottraining.model.Product;
 import com.neonid0.springboottraining.repository.StoreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -16,7 +14,6 @@ public class StoreService {
 
     @Autowired
     StoreRepository repository;
-
 
     public List<Good> getProducts() {
         return repository.findAll();
